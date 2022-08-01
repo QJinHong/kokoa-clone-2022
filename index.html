@@ -21,23 +21,36 @@
       <div class="status-bar__column">
         <i class="fa-solid fa-lock"></i>
         <span>53%</span>
-        <i class="fa-solid fa-battery-half fa-lg"></i>
+        <i class="fa-solid fa-battery-half"></i>
         <i class="fa-solid fa-bolt"></i>
       </div>
     </div>
 
     <header class="welcome-header">
       <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
+      <p class="welcome-header__text">If you have a Kokoa Account,</p>
       <p class="welcome-header__text">
-        If you have a Kokoa Account, log in with your email or phone number.
+        log in with your email or phone number.
       </p>
     </header>
 
-    <form id="login-form">
-      <input type="text" placeholder="Email or phone number" />
-      <input type="password" placeholder="Password" />
-      <input type="submit" value="Log In" />
-      <a href="#">Find Kokoa Account or Password</a>
+    <form action="friends.html" method="get" class="login-form">
+      <input
+        required
+        name="username"
+        class="login-form__input"
+        type="text"
+        placeholder="Email or phone number"
+      />
+      <input
+        required
+        name="password"
+        class="login-form__input"
+        type="password"
+        placeholder="Password"
+      />
+      <input class="login-form__btn" type="submit" value="Log In" />
+      <a class="login-form__a" href="#">Find Kokoa Account or Password</a>
     </form>
 
     <script
