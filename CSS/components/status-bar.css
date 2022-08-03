@@ -30,5 +30,5 @@
 }
 .status-bar__column .fa-battery-full {
   margin: 0px 5px;
-  color: rgba(0, 0, 0, 0.75);
+  color: var(--grey-icon);
 }

@@ -1,19 +1,22 @@
-body {
-  padding-top: 30px;
-}
-
 .screen-header {
   display: flex;
   justify-content: space-between;
   padding: var(--horizontal-space);
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .screen-header__title {
-  font-size: 32px;
+  font-size: 31px;
   font-weight: 600;
 }
 
 .screen-header__icons span {
   margin-left: 25px;
+  position: relative;
+}
+
+.screen-header__dot {
+  right: -7px;
+  top: -7px;
 }

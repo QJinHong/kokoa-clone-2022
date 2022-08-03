@@ -5,7 +5,7 @@
   background-color: #f9f9fa;
   padding: 20px 50px;
   box-sizing: border-box;
-  border-top: 0.5px solid rgba(0, 0, 0, 0.1);
+  border-top: 0.5px solid var(--main-border);
 }
 .nav__list {
   display: flex;
@@ -18,29 +18,12 @@
 }
 
 .nav__notification {
-  background-color: tomato;
-  width: 20px;
-  height: 20px;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-weight: 600;
   position: absolute;
   left: 25px;
-  bottom: 15px;
+  bottom: 10px;
 }
 
 .nav__dot {
-  background-color: tomato;
-  width: 5px;
-  height: 5px;
-  border-radius: 2.5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
   left: 30px;
   bottom: 25px;
 }

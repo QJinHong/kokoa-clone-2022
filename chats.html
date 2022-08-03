@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Friends - Kokoa Talk</title>
+    <title>Chats - Kokoa Talk</title>
   </head>
   <body>
     <!-- Status Bar -->
@@ -28,60 +28,53 @@
 
     <!-- Header -->
     <header class="screen-header">
-      <h1 class="screen-header__title">Friends</h1>
+      <h1 class="screen-header__title">Chats</h1>
       <div class="screen-header__icons">
         <span><i class="fa-solid fa-magnifying-glass fa-xl"></i></span>
+        <span><i class="fa-regular fa-comment-dots fa-xl"></i></span>
         <span><i class="fa-solid fa-music fa-xl"></i></span>
         <span><i class="fa-solid fa-gear fa-xl"></i></span>
       </div>
     </header>
 
-    <!-- Friends screen -->
-    <a id="friends-display-link">
-      <i class="fa-solid fa-circle-info"></i>Friends' Names Display
-      <i class="fa-solid fa-angle-right fa-xs"></i>
-    </a>
-
-    <main class="friends-screen">
-      <!-- User Component(Picture and Name) -->
+    <!-- User Component(Picture and Name) -->
+    <main class="main-screen">
       <div class="user-component">
         <div class="user-component__column">
           <img
             src="https://avatars.githubusercontent.com/u/3612017?v=4"
-            class="user-component__profile user-component__profile--xl"
+            class="user-component__profile user-component__profile"
           />
           <div class="user-component__text">
             <h4 class="user-component__name">Nicolas</h4>
-            <h6 class="user-component__subtitle">
-              Life in Toronto <i class="fa-solid fa-plane-departure"></i>
-            </h6>
+            <div class="user-component__subtitle user-component__messages">
+              Please check your Nomad coder Dash...
+            </div>
           </div>
         </div>
-        <div class="user-component__column"></div>
+        <div class="user-component__column">
+          <span class="user-component__time">21:22</span>
+          <div class="badge">1</div>
+        </div>
       </div>
-      <div class="friends-screen__channel">
-        <div class="friends-screen__channel-header">
-          <span>Channel</span>
-          <i class="fa-solid fa-angle-up"></i>
+
+      <!-- second chatting box -->
+      <div class="user-component">
+        <div class="user-component__column">
+          <img
+            src="https://yt3.ggpht.com/ytc/AMLnZu8vGCKGIhJ4dMI2kyL3DutEoghFX_BtvHe_UUhP0w=s900-c-k-c0x00ffffff-no-rj"
+            class="user-component__profile user-component__profile"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__name">Shark</h4>
+            <div class="user-component__subtitle user-component__messages">
+              회원님, 오늘도 아자아자 힘내서 운동 함..
+            </div>
+          </div>
         </div>
-        <div class="user-component">
-          <div class="user-component__column">
-            <img
-              src="https://yt3.ggpht.com/ytc/AMLnZu8vGCKGIhJ4dMI2kyL3DutEoghFX_BtvHe_UUhP0w=s900-c-k-c0x00ffffff-no-rj"
-              class="user-component__profile user-component__profile--sm"
-            />
-            <div class="user-component__text">
-              <h4 class="user-component__name user-component__name--not-bold">
-                Shark
-              </h4>
-            </div>
-          </div>
-          <div class="user-component__column">
-            <div>
-              <span>2</span>
-              <i class="fa-solid fa-angle-right"></i>
-            </div>
-          </div>
+        <div class="user-component__column">
+          <span class="user-component__time">18:01</span>
+          <div class="badge">3</div>
         </div>
       </div>
     </main>
@@ -90,14 +83,14 @@
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__btn">
-          <a class="nav__link" href="friends.html"
-            ><i class="fa-solid fa-user fa-2x"></i
+          <a class="nav__link" href="friends.html">
+            <i class="fa-regular fa-user fa-2x"></i
           ></a>
         </li>
         <li class="nav__btn">
           <a class="nav__link" href="chats.html">
             <span class="nav__notification badge__sm">1</span>
-            <i class="fa-regular fa-comment fa-2x"></i
+            <i class="fa-solid fa-comment fa-2x"></i
           ></a>
         </li>
         <li class="nav__btn">

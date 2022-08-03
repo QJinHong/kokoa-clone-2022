@@ -1,0 +1,62 @@
+.find-icons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.find-icons__icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.find-icons__icon i {
+  font-size: 35px;
+  color: var(--grey-icon);
+  position: relative;
+}
+
+.find-icons__icon span {
+  margin-top: 18px;
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--grey-icon);
+}
+
+.find-addby {
+  position: absolute;
+  top: 165px;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.find-contacts {
+  position: absolute;
+  top: 185px;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.recommended-friends {
+  margin-top: 35px;
+  padding: 20px 0px;
+  border-top: var(--main-border);
+  border-bottom: var(--main-border);
+}
+
+.recommended-friends__title {
+  font-weight: 500;
+  color: var(--grey-chat);
+}
+
+.recommended-friends__text {
+  margin-top: 10px;
+  padding: 95px 0px;
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--grey-chat);
+}

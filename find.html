@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Friends - Kokoa Talk</title>
+    <title>Find - Kokoa Talk</title>
   </head>
   <body>
     <!-- Status Bar -->
@@ -28,61 +28,38 @@
 
     <!-- Header -->
     <header class="screen-header">
-      <h1 class="screen-header__title">Friends</h1>
+      <h1 class="screen-header__title">Find</h1>
       <div class="screen-header__icons">
         <span><i class="fa-solid fa-magnifying-glass fa-xl"></i></span>
-        <span><i class="fa-solid fa-music fa-xl"></i></span>
-        <span><i class="fa-solid fa-gear fa-xl"></i></span>
+        <span
+          ><div class="screen-header__dot badge__dot"></div>
+          <i class="fa-solid fa-gear fa-xl"></i>
+        </span>
       </div>
     </header>
 
-    <!-- Friends screen -->
-    <a id="friends-display-link">
-      <i class="fa-solid fa-circle-info"></i>Friends' Names Display
-      <i class="fa-solid fa-angle-right fa-xs"></i>
-    </a>
-
-    <main class="friends-screen">
-      <!-- User Component(Picture and Name) -->
-      <div class="user-component">
-        <div class="user-component__column">
-          <img
-            src="https://avatars.githubusercontent.com/u/3612017?v=4"
-            class="user-component__profile user-component__profile--xl"
-          />
-          <div class="user-component__text">
-            <h4 class="user-component__name">Nicolas</h4>
-            <h6 class="user-component__subtitle">
-              Life in Toronto <i class="fa-solid fa-plane-departure"></i>
-            </h6>
-          </div>
+    <main class="main-screen">
+      <div class="find-icons">
+        <div class="find-icons__icon">
+          <i class="fa-solid fa-qrcode"></i><span>QR Code</span>
         </div>
-        <div class="user-component__column"></div>
+        <div class="find-icons__icon">
+          <i class="fa-regular fa-address-book"></i>
+          <span class="find-addby">Add by</span>
+          <span class="find-contacts">Contacts</span>
+        </div>
+        <div class="find-icons__icon">
+          <i class="fa-solid fa-fingerprint"></i><span>Add by ID</span>
+        </div>
+        <div class="find-icons__icon">
+          <i class="fa-regular fa-envelope"></i><span>Invite</span>
+        </div>
       </div>
-      <div class="friends-screen__channel">
-        <div class="friends-screen__channel-header">
-          <span>Channel</span>
-          <i class="fa-solid fa-angle-up"></i>
-        </div>
-        <div class="user-component">
-          <div class="user-component__column">
-            <img
-              src="https://yt3.ggpht.com/ytc/AMLnZu8vGCKGIhJ4dMI2kyL3DutEoghFX_BtvHe_UUhP0w=s900-c-k-c0x00ffffff-no-rj"
-              class="user-component__profile user-component__profile--sm"
-            />
-            <div class="user-component__text">
-              <h4 class="user-component__name user-component__name--not-bold">
-                Shark
-              </h4>
-            </div>
-          </div>
-          <div class="user-component__column">
-            <div>
-              <span>2</span>
-              <i class="fa-solid fa-angle-right"></i>
-            </div>
-          </div>
-        </div>
+      <div class="recommended-friends">
+        <h6 class="recommended-friends__title">Recommended Friends</h6>
+        <span class="recommended-friends__text"
+          >You have no recommended friends.</span
+        >
       </div>
     </main>
 
@@ -91,7 +68,7 @@
       <ul class="nav__list">
         <li class="nav__btn">
           <a class="nav__link" href="friends.html"
-            ><i class="fa-solid fa-user fa-2x"></i
+            ><i class="fa-regular fa-user fa-2x"></i
           ></a>
         </li>
         <li class="nav__btn">

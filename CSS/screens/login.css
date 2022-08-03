@@ -31,7 +31,7 @@
   font-size: 20px;
   font-weight: 500;
   padding: 12px 0px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid var(--grey-chat);
   transition: border-color 0.3s ease-in-out;
 }
 
@@ -51,7 +51,7 @@
 }
 
 .login-form__input::placeholder {
-  color: rgba(0, 0, 0, 0.4);
+  color: var(--grey-chat);
 }
 
 .login-form__a {
