@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Friends - Kokoa Talk</title>
+    <title>More - Kokoa Talk</title>
   </head>
   <body>
     <!-- Status Bar -->
@@ -28,24 +28,19 @@
 
     <!-- Header -->
     <header class="screen-header">
-      <h1 class="screen-header__title">Friends</h1>
+      <h1 class="screen-header__title">More</h1>
       <div class="screen-header__icons">
         <span><i class="fa-solid fa-magnifying-glass fa-xl"></i></span>
         <span><i class="fa-solid fa-music fa-xl"></i></span>
         <span
-          ><a href="settings.html"><i class="fa-solid fa-gear fa-xl"></i></a
-        ></span>
+          ><div class="screen-header__dot badge__dot"></div>
+          <a href="settings.html"><i class="fa-solid fa-gear fa-xl"></i></a>
+        </span>
       </div>
     </header>
 
-    <!-- Friends screen -->
-    <a id="friends-display-link">
-      <i class="fa-solid fa-circle-info"></i>Friends' Names Display
-      <i class="fa-solid fa-angle-right fa-xs"></i>
-    </a>
-
-    <main class="friends-screen">
-      <!-- User Component(Picture and Name) -->
+    <main class="main-screen more-screen">
+      <!-- User -->
       <div class="user-component">
         <div class="user-component__column">
           <img
@@ -55,35 +50,65 @@
           <div class="user-component__text">
             <h4 class="user-component__name">Nicolas</h4>
             <h6 class="user-component__subtitle">
-              Life in Toronto <i class="fa-solid fa-plane-departure"></i>
+              +1 787-493-4219
+              <i class="fa-solid fa-circle-exclamation"></i>
             </h6>
           </div>
         </div>
-        <div class="user-component__column"></div>
-      </div>
-      <div class="friends-screen__channel">
-        <div class="friends-screen__channel-header">
-          <span>Channel</span>
-          <i class="fa-solid fa-angle-up"></i>
+        <div class="user-component__column2">
+          <i class="fa-regular fa-message fa-2x"></i>
         </div>
-        <div class="user-component">
-          <div class="user-component__column">
-            <img
-              src="https://yt3.ggpht.com/ytc/AMLnZu8vGCKGIhJ4dMI2kyL3DutEoghFX_BtvHe_UUhP0w=s900-c-k-c0x00ffffff-no-rj"
-              class="user-component__profile user-component__profile--sm"
-            />
-            <div class="user-component__text">
-              <h4 class="user-component__name user-component__name--not-bold">
-                Shark
-              </h4>
-            </div>
+      </div>
+    </main>
+
+    <!-- icons row -->
+    <div class="more__icon-row">
+      <div class="more__icon-row__icon">
+        <i class="fa-regular fa-calendar-check"></i><span>Calendar</span>
+      </div>
+      <div class="more__icon-row__icon">
+        <i class="fa-solid fa-box-archive"></i>
+        <div class="screen-header__dot badge__dot-lg"></div>
+        <span>Talk Drive</span>
+      </div>
+      <div class="more__icon-row__icon">
+        <i class="fa-regular fa-face-kiss"></i><span>Emoticons</span>
+      </div>
+      <div class="more__icon-row__icon">
+        <i class="fa-solid fa-brush"></i><span>Themes</span>
+      </div>
+    </div>
+    <div class="more__icon-row2">
+      <div class="more__icon-row__icon">
+        <i class="fa-regular fa-circle-user"></i><span>Account</span>
+      </div>
+      <div class="more__icon-row__icon">
+        <i class="fa-regular fa-comments"></i>
+        <span>Openchat</span>
+      </div>
+    </div>
+
+    <!-- More Suggestions -->
+    <main class="main-screen more-screen">
+      <span class="more-suggestions__title">Suggestions</span>
+      <div class="more-suggestions__icons">
+        <div class="more-suggestions__icon">
+          <div class="more-suggestions__icon-image">
+            <i class="fa-solid fa-quote-right"></i>
           </div>
-          <div class="user-component__column">
-            <div>
-              <span>2</span>
-              <i class="fa-solid fa-angle-right"></i>
-            </div>
+          <span class="more-suggestions__icon-text">Kokoa Story</span>
+        </div>
+        <div class="more-suggestions__icon">
+          <div class="more-suggestions__icon-image">
+            <i class="fa-solid fa-user-group"></i>
           </div>
+          <span class="more-suggestions__icon-text">Kokoa Freinds</span>
+        </div>
+        <div class="more-suggestions__icon">
+          <div class="more-suggestions__icon-image">
+            <i class="fa-regular fa-gem"></i>
+          </div>
+          <span class="more-suggestions__icon-text">Friends Gem</span>
         </div>
       </div>
     </main>
@@ -93,7 +118,7 @@
       <ul class="nav__list">
         <li class="nav__btn">
           <a class="nav__link" href="friends.html"
-            ><i class="fa-solid fa-user fa-2x"></i
+            ><i class="fa-regular fa-user fa-2x"></i
           ></a>
         </li>
         <li class="nav__btn">

@@ -1,25 +1,4 @@
-.find-icons {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin-top: 30px;
-  box-sizing: border-box;
-}
-
-.find-icons__icon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 25%;
-}
-
-.find-icons__icon i {
-  font-size: 35px;
-  color: var(--grey-icon);
-  position: relative;
-}
-
-.find-icons__icon span {
+.icon-row__icon span {
   margin-top: 18px;
   font-size: 17px;
   font-weight: 500;
