@@ -43,7 +43,7 @@
         </div>
       </header>
 
-      <!-- Chatting Main page -->
+      <!-- Incoming messages -->
       <main class="main-chat">
         <div class="chat__timestamp">Tuesday, June 30, 2020</div>
 
@@ -57,14 +57,43 @@
                 ready to start!
                 <div class="message__bubble-tail"></div
               ></span>
+              <span class="message__time">21:22</span>
+            </div>
+          </div>
+        </div>
 
+        <!-- Message own -->
+        <div class="message-row message-row--own">
+          <div class="message__content">
+            <div class="message__info">
+              <span class="message__bubble"
+                >Oh, Thx for the notice!
+                <div class="message__bubble-tail"></div
+              ></span>
               <span class="message__time">21:22</span>
             </div>
           </div>
         </div>
       </main>
-    </body>
 
+      <!-- Text bar -->
+      <form class="textbar">
+        <div class="textbar__column">
+          <i class="fa-regular fa-square-plus fa-2x"></i>
+        </div>
+        <div class="textbar__column">
+          <input type="text" placeholder="    Write a message.."/>
+          <i class="fa-regular fa-face-grin-wink"></i>
+          <button>
+            <i class="fa-solid fa-arrow-up"></i>
+          </button>
+        </div>
+      </form>
+
+      <div id="no-mobile">
+        <span>Your screen is too big</span>
+      </div>
+      
     <script
       src="https://kit.fontawesome.com/3b7d485dec.js"
       crossorigin="anonymous"
