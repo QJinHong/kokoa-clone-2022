@@ -1,0 +1,246 @@
+#chat-screen {
+  background-color: #b2c7da;
+  height: 300vh;
+}
+#chat-screen .status-bar {
+  background-color: #b2c7da;
+  z-index: 2;
+}
+#chat-screen .alt-header-chat {
+  background-color: #b2c7da;
+  display: flex;
+  padding: 10px var(--horizontal-space);
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: none;
+    opacity: 0;
+  }
+  1% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.main-chat {
+  margin-top: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 0.8s linear;
+}
+
+.chat__timestamp {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.15);
+  padding: 8px 12px;
+  border-radius: 15px;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+@keyframes message-row {
+  0% {
+    transform: none;
+    opacity: 0;
+  }
+  1% {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.message-row {
+  width: 100%;
+  display: flex;
+  margin-bottom: 25px;
+  animation: message-row 1s ease-in-out;
+}
+
+.message-row img {
+  width: 45px;
+  height: 45px;
+  border-radius: 40%;
+  margin: 0px 10px 0px 15px;
+}
+
+.message__author {
+  opacity: 0.7;
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.message__bubble {
+  background-color: white;
+  max-width: 260px;
+  padding: 8px 13px;
+  display: flex;
+  margin-right: 5px;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.message__bubble-tail {
+  position: absolute;
+  top: 7px;
+  left: -16px;
+  font-size: 0px;
+  background-color: white;
+  padding: 4px 5px;
+  margin-left: 11px;
+  border-bottom-left-radius: 10px;
+}
+
+.message__info {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+
+.message__time {
+  font-size: 14px;
+  color: var(--grey-chat);
+  font-weight: 500;
+  display: flex;
+}
+
+@keyframes message-row--own {
+  0% {
+    transform: none;
+    opacity: 0;
+  }
+  1% {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.message-row--own {
+  justify-content: flex-end;
+  animation: message-row--own 1s ease-in-out;
+}
+
+.message-row--own .message__bubble {
+  background-color: var(--yellow);
+  margin: 0px 15px 0px 5px;
+}
+
+.message-row--own .message__info {
+  flex-direction: row-reverse;
+}
+
+.message-row--own .message__bubble-tail {
+  top: 8px;
+  left: 225px;
+  background-color: var(--yellow);
+  padding: 4px 6px;
+  border-bottom-right-radius: 12px;
+}
+
+.textbar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 20px;
+  align-items: center;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+.textbar .fa-face-grin-wink,
+.textbar button,
+.textbar .textbar__column:first-child {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.textbar:focus-within .fa-face-grin-wink,
+.textbar:focus-within button,
+.textbar:focus-within .textbar__column:first-child {
+  opacity: 0;
+}
+
+.textbar:focus-within {
+  transform: translateY(80px);
+}
+
+.textbar:focus-within input {
+  width: 90vw;
+  transform: translateX(-10%) translateY(-80px);
+  background-color: var(--yellow);
+}
+
+.textbar__column {
+  position: relative;
+}
+
+.textbar .textbar__column:first-child {
+  width: 10%;
+  color: var(--grey-chat);
+}
+
+.textbar .textbar__column:last-child {
+  width: 90%;
+}
+
+.textbar input {
+  height: 36px;
+  width: 100%;
+  border: var(--main-border);
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.textbar__column:last-child > i,
+.textbar__column:last-child button {
+  position: absolute;
+  right: -3px;
+  top: 2px;
+}
+
+.textbar__column:last-child > i {
+  right: 45px;
+  top: 7px;
+  font-size: 25px;
+  color: var(--grey-chat);
+}
+
+.textbar__column button {
+  background-color: var(--yellow);
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+.textbar__column button:focus,
+.textbar__column button:active {
+  outline: none;
+}
