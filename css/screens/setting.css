@@ -1,0 +1,53 @@
+.setting-list {
+  margin-top: -10px;
+  margin-bottom: 25px;
+}
+
+.settings__setting {
+  font-size: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 0px 20px 0px 30px;
+}
+
+.settings__setting-column {
+  padding: 22px 0px;
+  position: relative;
+}
+
+.settings__setting-column i {
+  margin-right: 15px;
+  font-size: 23px;
+}
+
+.settings__setting-column:last-child {
+  opacity: 0.6;
+  font-size: 21px;
+}
+
+.settings__setting:nth-child(even) {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.setting__border {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.setting-list2 {
+  margin-top: 28px;
+}
+
+.settings__notification1 {
+  position: absolute;
+  bottom: 22px;
+  left: 127px;
+}
+
+.settings__notification2 {
+  position: absolute;
+  bottom: 22px;
+  left: 130px;
+}
